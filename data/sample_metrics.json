@@ -1,0 +1,26 @@
+[
+    {
+        "resource": "web-server-01",
+        "cpu": 45,
+        "disk": 50,
+        "availability": true
+    },
+    {
+        "resource": "web-server-02",
+        "cpu": 78,
+        "disk": 60,
+        "availability": true
+    },
+    {
+        "resource": "web-server-03",
+        "cpu": 93,
+        "disk": 92,
+        "availability": true
+    },
+    {
+        "resource": "web-server-04",
+        "cpu": 40,
+        "disk": 40,
+        "availability": false
+    }
+]
