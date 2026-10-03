@@ -71,3 +71,71 @@ def test_critical_cpu():
     result = evaluate_metrics(metrics, thresholds)
 
     assert result["status"] == "CRITICAL"
+
+def test_warning_disk():
+    metrics = {
+        "resource": "test-server",
+        "cpu": 40,
+        "disk": 80,
+        "availability": True
+    }
+
+    thresholds = {
+        "cpu": {
+            "warning": 70,
+            "critical": 85
+        },
+        "disk": {
+            "warning": 75,
+            "critical": 90
+        }
+    }
+
+    result = evaluate_metrics(metrics, thresholds)
+
+    assert result["status"] == "WARNING"
+
+def test_critical_disk():
+    metrics = {
+        "resource": "test-server",
+        "cpu": 40,
+        "disk": 95,
+        "availability": True
+    }
+
+    thresholds = {
+        "cpu": {
+            "warning": 70,
+            "critical": 85
+        },
+        "disk": {
+            "warning": 75,
+            "critical": 90
+        }
+    }
+
+    result = evaluate_metrics(metrics, thresholds)
+
+    assert result["status"] == "CRITICAL"
+def test_unavailable_resource():
+    metrics = {
+        "resource": "test-server",
+        "cpu": 40,
+        "disk": 50,
+        "availability": False
+    }
+
+    thresholds = {
+        "cpu": {
+            "warning": 70,
+            "critical": 85
+        },
+        "disk": {
+            "warning": 75,
+            "critical": 90
+        }
+    }
+
+    result = evaluate_metrics(metrics, thresholds)
+
+    assert result["status"] == "CRITICAL"
