@@ -762,15 +762,3 @@ Interested in:
 <img src="https://img.shields.io/badge/Tested-Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white"/>
 
 </div>
-```
-
-### One important thing, bro
-
-I intentionally **didn't put fake claims** like:
-
-```text
-❌ Real-time Azure Monitor integration
-❌ Azure VM deployed
-❌ Production cloud monitoring
-❌ Live Azure alerts
-```
