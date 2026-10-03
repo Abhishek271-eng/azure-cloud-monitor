@@ -1,10 +1,3 @@
-Yes bro 🔥 — if this is going on GitHub, let's make it look like an actual **professional cloud project README**, not a basic college README.
-
-One limitation: GitHub README Markdown has limited HTML/CSS support, so we should use **GitHub-compatible HTML** rather than custom CSS that GitHub will strip. We can still use colored badges, tables, separators, icons, centered sections, cards, and diagrams.
-
-Replace the whole `README.md` with this:
-
-```markdown
 <div align="center">
 
 <img src="https://img.shields.io/badge/AZURE-CLOUD%20MONITORING-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" alt="Azure Cloud Monitoring"/>
@@ -781,13 +774,3 @@ I intentionally **didn't put fake claims** like:
 ❌ Production cloud monitoring
 ❌ Live Azure alerts
 ```
-
-because we didn't actually do those things.
-
-Instead, the README makes the distinction very clear:
-
-**Current:** simulated infrastructure → monitoring engine → alerts → reports
-
-**Future:** Azure Monitor → real metrics → same monitoring engine
-
-That actually makes the project easier for you to defend in an interview because **everything written in the README matches what you've actually built.**
